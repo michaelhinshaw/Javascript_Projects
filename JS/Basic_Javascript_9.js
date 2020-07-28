@@ -1,8 +1,8 @@
 function countdown() {
-  var seconds = document.getElementById("seconds").nodeValue;
+  var seconds = document.getElementById("seconds").value;
 
   function tick() {
-    seconds = seconds -1;
+    seconds = seconds - 1;
     timer.innerHTML = seconds;
     setTimeout(tick, 1000);
   if(seconds == -1) {
@@ -17,7 +17,7 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showslides(slideIndex += n);
+  showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
